@@ -1,8 +1,8 @@
 const express = require('express');
 const morgan = require('morgan');
 const path = require('path');
+const db = require('../assets/data')
 const app = express();
-const db = require("../assets/data");
 const port = 3000;
 
 app.use(morgan('combined'));
@@ -23,7 +23,6 @@ db.query("SELECT * FROM category;", (err, results) => {
         console.error("Lỗi truy vấn DB:", err);
     } else {
         products = results; // Gán giá trị cố định cho products
-        console.log("Products đã được load:", products);
     }
 });
 
