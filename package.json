@@ -1,0 +1,30 @@
+{
+  "name": "tat_applestore",
+  "version": "1.0.0",
+  "main": "web.js",
+  "scripts": {
+    "start": "nodemon src/controllers/web.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phanthang04/Web-Project.git"
+  },
+  "author": "PT tập Code",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phanthang04/Web-Project/issues"
+  },
+  "homepage": "https://github.com/phanthang04/Web-Project#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2",
+    "inspector": "^0.5.0",
+    "mysql2": "^3.13.0"
+  },
+  "devDependencies": {
+    "ejs": "^3.1.10",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.9"
+  }
+}

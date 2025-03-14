@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'Monsterrat-Light';
+    src: url("../Font/Montserrat-Light.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Monsterrat-Bold';
+    src: url("../Font/Montserrat-Bold.otf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Monsterrat-Medium';
+    src: url("../Font/Montserrat-Medium.otf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Monsterrat-Regular';
+    src: url("../Font/Montserrat-Regular.otf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Css header*/
+.dau-tieu-de{
+    width: 100%;
+    height: 40px;
+    background-color: black;
+}
+.dau-tieu-de a{
+    color: white;
+}
+.tieu-de-phan-dau {
+    color: white;
+    text-align: center;
+    padding: 11px;
+    font-family: 'Monsterrat-Light';
+}
+.list-tieu-de{
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+.search-tren-tieu-de{
+    flex-grow: 1;
+    margin: 0 20px;
+    position: relative;
+}
+.tim-kiem{
+    width: 100%;
+    margin-top: 38px;
+    padding: 10px 40px 10px 32px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.fa-magnifying-glass{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #000;
+}
+.icon-cart{
+    display: flex;
+    align-items: center;
+    margin-left: 26px;
+    margin-right: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+}
+.icon-user{
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+}
+.header-user{
+    position: absolute;
+    top: 115px;
+    right: 70px;
+    z-index: 10;
+    padding: 10px 0;
+    margin: 5px 0;
+    background-color: #fff;
+    border: 1px solid #ebeef5;
+    border-radius: 4px;
+    box-shadow:0 2px 12px 0 rgba(0,0,0,.1);
+    transform-origin: top;
+    animation: header-user-grow ease-in 0.25s;
+    display: none;
+}
+@keyframes header-user-grow {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.header-user_header{
+    font-family: Monsterrat-Regular;
+    font-size: 50%;
+    line-height: 30px;
+    padding-bottom: 10px;
+    width: max-content;
+    max-width: 400px;
+    margin: 0 20px;
+    cursor: text;
+}
+.header-user_item{
+    font-family: Monsterrat-Light;
+    font-size: 50%;
+    line-height: 30px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: max-content;
+    max-width: 400px;
+    margin-top: 4px;
+    margin-left: 24px;
+}
+
+.icon-user:hover .header-user {
+    display: block;
+}
+.icon-user a:visited{
+    color: black;
+}
+.icon-cart a:visited{
+    color: black;
+}
+/*Css phần menu header*/
+.menu-tieu-de{
+    list-style-type: none;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.menu-tieu-de a{
+    color: black;
+    font-family: 'Monsterrat-Regular',sans-serif;
+    /*Đặt các liên kết nằm ngang cạnh nhau.*/
+    float: left;
+    /*Đặt các liên kết thành khối để có thể áp dụng padding.*/
+    display: block;
+    /*text nằm giữa ô  */
+    text-align: center;
+    /*Thêm khoảng cách bên trong liên kết (14px trên dưới, 20px trái phải).*/
+    padding: 14px 20px;
+    /*bỏ gạch chân chữ*/
+    text-decoration: none;
+}
+.menu-tieu-de a:hover{
+    background-color: snow;
+}
+hr{
+    border-color: #F1F1F1;
+}
+.header-home{
+    position: fixed; /* Giữ thanh tiêu đề ở vị trí cố định */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/*css footer*/
+footer{
+    font-family: Monsterrat-Light;
+}
+.first-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.left-footer{
+    font-size: 12px;
+    width: 230px;
+    font-family: Monsterrat-Light;
+    margin-right: 60px;
+}
+.text-left-footer{
+    padding-left: 12px;
+}
+.table-footer{
+    font-size: 12px;
+    width: auto;
+    margin-top: 0px;
+    font-family: Monsterrat-Light;
+}
+.table-footer a{
+    text-decoration: none;
+    color: black;
+}
+.right-footer{
+    font-size: 12px;
+    width: 230px;
+    margin-top: 12px;
+    font-family: Monsterrat-Light;
+}
+.icon-social-network-footer a{
+    text-decoration: none;
+}

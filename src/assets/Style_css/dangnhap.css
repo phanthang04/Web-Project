@@ -1,0 +1,173 @@
+@font-face {
+    font-family: 'Monsterrat-Light';
+    src: url("../Font/Montserrat-Light.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Monsterrat-Bold';
+    src: url("../Font/Montserrat-Bold.otf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Monsterrat-Medium';
+    src: url("../Font/Montserrat-Medium.otf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Monsterrat-Regular';
+    src: url("../Font/Montserrat-Regular.otf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+/* Đặt lại margin và padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Monsterrat-Light;
+}
+
+.main-container {
+    display: flex;
+    height: 85vh;
+    width: 100%;
+    position:inherit;
+    background: rgb(255, 255, 255);
+    /* padding: 20px; */
+    border-radius: 8px;
+    margin-top: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    width: 90%; 
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+}
+.image-container {
+    flex: 1.85;
+    margin-right: 15px;
+}
+
+.image-container img {
+    width: 100%; 
+    max-width: 100%; 
+    height: auto; 
+    display: block;
+    margin: 0 auto; 
+}
+.login-box {
+    flex: 0.89;
+    padding: 30px;
+}
+
+.login-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    
+}
+
+.login-header h2 {
+    font-size: 30px;
+}
+
+.login-link a {
+    text-decoration: none;
+    color: rgb(57, 55, 55);
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 4px 8px; 
+    margin: 20px 0;
+    background: white;
+    height: 32px;
+}
+
+.input-group i {
+    margin-right: 10px;
+    color: #444343;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 12px;
+    height: 100%; 
+}
+
+.forgot-password {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    color: rgb(56, 55, 55);
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 7px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.or {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 15px 0;
+    font-size: 14px;
+    color: #666;
+    white-space: nowrap; 
+}
+.or::before,
+.or::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+    margin: 0 10px; 
+}
+.btn-google {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.btn-google img {
+    margin-right: 10px;
+}
+.btn-google:hover {
+    background: #f1f1f1;
+   
+    border-color: #bbb;
+}
+.btn-facebook:hover {
+    background: #125abe;
+}

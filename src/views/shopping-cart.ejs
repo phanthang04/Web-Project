@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/Style_css/header_footer.css">
+    <link rel="stylesheet" href="../assets/Style_css/shopping-cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+          rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <%- include('header'); -%>
+    <main>
+        <div class="cart-container">
+            <h2 style="font-family: Monsterrat-Regular">Giỏ hàng</h2>
+            <div class="cart-layout">
+                <div class="delivery-options">
+                    <label class="delivery-option active">
+                        <input type="radio" name="delivery" checked>
+                        <div>
+                            <strong style="font-family: Monsterrat-Regular">Giao hàng tận nơi</strong>
+                            <br>
+                            <span style="font-size: 14px; color: #777;">Đơn hàng sẽ được giao đến địa chỉ</span>
+                        </div>
+                    </label>
+                    <label class="delivery-option">
+                        <input type="radio" name="delivery">
+                        <div>
+                            <strong style="font-family: Monsterrat-Regular">Nhận tại cửa hàng</strong>
+                            <br>
+                            <span style="font-size: 14px; color: #777;">Nhận sản phẩm đã chọn tại cửa hàng</span>
+                        </div>
+                    </label>
+                </div>
+                <div class="order-summary">
+                    <h3 style="font-family: Monsterrat-Regular">Tóm tắt đơn hàng (sản phẩm)</h3>
+                    <p><span>Tổng phụ</span> <span>0 đ</span></p>
+                    <p><span>Giảm giá</span> <span>-0 đ</span></p>
+                    <hr>
+                    <p class="total"><span style="font-family: Monsterrat-Regular">Tổng cộng</span> <span>0 đ</span></p>
+                    <button class="checkout-btn">Thanh toán</button>
+                </div>
+            </div>
+            <p class="empty-cart-message">Giỏ hàng của bạn trống.</p>
+        </div>
+    </main>
+    <hr/>
+    <%- include('footer'); -%>
+</body>
+</html>

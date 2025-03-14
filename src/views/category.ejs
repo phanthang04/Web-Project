@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/Style_css/header_footer.css">
+    <link rel="stylesheet" href="../assets/Style_css/iphone.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+          rel="stylesheet">
+    <title>TAT Apple - Đại lý uỷ quyền Apple</title>
+</head>
+<body>
+    <%- include('header'); -%>
+    <main style="margin-top: 200px;margin-bottom: 50px; text-align: center">
+        <div  style="background-color: black">
+            <img class="banner"  style=" height: 70vh">
+        </div>
+        <script >
+            document.addEventListener("DOMContentLoaded", () => {
+                    let banner = document.querySelector(".banner");
+                    banner.src = "../assets/image/Banner/Banner-iPhone.png"; 
+            });
+            </script>
+        
+    </main>
+    <hr/>
+    <%- include('footer'); -%>
+</body>
+</html>

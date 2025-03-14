@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    margin-top: 300px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    font-family: Monsterrat-Light;
+}
+.cart-container {
+    width: 80%;
+    max-width: 1200px;
+}
+h2 {
+    font-size: 28px;
+    margin-bottom: 50px;
+}
+.cart-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+.delivery-options {
+    display: flex;
+    width: 60%;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+.delivery-option {
+    flex: 1;
+    padding: 15px;
+    background: #f8f8f8;
+    cursor: pointer;
+    border-right: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.delivery-option:last-child {
+    border-right: none;
+}
+
+.delivery-option input {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+.delivery-option input:checked {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.delivery-option input:checked::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.delivery-option.active {
+    background: #e0e0e0;
+}
+/* Khung tóm tắt đơn hàng */
+.order-summary {
+    background-color: #f5f5f5;
+    padding: 25px;
+    border-radius: 10px;
+    width: 40%;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: -100px;
+    margin-left: 40px;
+}
+.order-summary h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+}
+.order-summary p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    margin: 10px 0;
+}
+.total {
+    font-weight: bold;
+    font-size: 20px;
+}
+.checkout-btn {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.checkout-btn:hover {
+    background-color: #0056b3;
+}
+
+
+.empty-cart-message {
+    margin-top: 70px;
+    font-size: 18px;
+    color: #777;
+    margin-left: 160px ;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/Style_css/header_footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+            rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header-home">
+        <div class="dau-tieu-de">
+            <p class="tieu-de-phan-dau">‼️Siêu hạ giá. Siêu nhiều ưu đãi. Tìm hiểu thêm về TAT Apple tránh giả mạo <a href="">tại đây.</a></p>
+        </div>
+        <div class="list-tieu-de">
+            <div class="logo-tat-tieude">
+                <a href = "/"><img style="width: 300px" src="../assets/image/Logo.jpg"></a>
+            </div>
+            <div class="search-tren-tieu-de">
+                <input type="text" class="tim-kiem" placeholder="Tìm kiếm sản phẩm tại TAT Apple...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+
+            <div class="icon-user">
+                <a  style="color: black">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+                <ul class="header-user">
+                    <div class="header-user_header">
+                        <h3>Xin chào</h3>
+                    </div>
+                    <hr/>
+                    <div class="user-before-login">
+                        <li class="header-user_item">
+                            <a href="/src/views/dangnhap">Đăng nhập</a>
+                        </li>
+                        <li class="header-user_item">
+                            <a href ="/dangky">Đăng ký</a>
+                        </li>
+                    </div>
+                </ul>
+                <ul class="header-user">
+                    <div class="header-user_header">
+                        <h3>Xin chào</h3>
+                    </div>
+                    <hr/>
+                    <div class="use-after-login">
+                        <li class="header-user_item">
+                            <a href ="">Profile</a>
+                        </li>
+                        <li class="header-user_item">
+                            <a href ="">Đơn hàng</a>
+                        </li>
+                        <li class="header-user_item">
+                            <a href ="">Địa chỉ</a>
+                        </li>
+                        <li class="header-user_item">
+                            <a href ="">Đăng xuất</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+
+
+            <div class="icon-cart">
+                <a href="shopping-cart.html" style="color: black"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+        <ul class="menu-tieu-de">
+            <% products.forEach(product => { %>
+                <li>
+                    <a href="<%= product.name === 'Âm Thanh' ? '/category/sound' 
+                    : product.name === 'Phụ Kiện' ? '/category/accessory' 
+                    : '/category/' + encodeURIComponent(product.name) %>"
+                    %>">
+                        <%= product.name %>
+                    </a>
+                    
+                </li>
+            <% }) %>
+            <li><a href="">
+                Tìm hiểu thêm
+            </a></li>
+        </ul>
+        <hr>
+    </header>
+</body>
+</html>
