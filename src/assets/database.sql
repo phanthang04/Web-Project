@@ -28,9 +28,9 @@ create table category(
 
 
 insert into category(name, banner) values
-("iPhone", "./assets/image/Banner/Banner-iPhone.png"), ("iPad", "./assets/image/Banner/Banner-iPad.jpeg"), 
-("Apple Watch", "./assets/image/Banner/Banner-AW.png"), ("Macbook", "./assets/image/Banner/Banner-MB.png"), 
-("Âm Thanh", "./assets/image/Banner/Banner-AP.jpeg"), ("Phụ Kiện", "./assets/image/Banner/Banner-PK.png");
+("iPhone", "../assets/image/Banner/Banner-iPhone.png"), ("iPad", "../assets/image/Banner/Banner-iPad.jpeg"), 
+("Apple Watch", "../assets/image/Banner/Banner-AW.png"), ("Macbook", "../assets/image/Banner/Banner-MB.png"), 
+("Âm Thanh", "../assets/image/Banner/Banner-AP.jpeg"), ("Phụ Kiện", "../assets/image/Banner/Banner-PK.png");
 
 -- create table products(
 -- 	category_id int,
