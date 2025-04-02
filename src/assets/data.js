@@ -15,6 +15,37 @@ db.connect((err) => {
     }
 });
 
+function getCategory() {
+    return new Promise((resolve, reject) => {
+      db.query("SELECT * FROM category", (err, results) => {
+        if (err) {
+          reject(err);
+        } else {
+          resolve(results);
+        }
+      });
+    });
+  }
+
+function getProducts() {
+    return new Promise((resolve, reject) => {
+        db.query("SELECT * FROM products", (err, results) => {
+        if (err) {
+            reject(err);
+        } else {
+            resolve(results);
+        }
+        });
+    });
+}
+
+function getDetailProduct(){}
 
 
-module.exports = db;
+
+module.exports = {
+    db,
+    getCategory,
+    getDetailProduct,
+    getProducts
+};

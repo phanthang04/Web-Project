@@ -1,9 +1,9 @@
 {
   "name": "tat_applestore",
   "version": "1.0.0",
-  "main": "web.js",
+  "main": "server.js",
   "scripts": {
-    "start": "nodemon src/controllers/web.js",
+    "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

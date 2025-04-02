@@ -22,6 +22,20 @@
                 <input type="text" class="search" placeholder="Tìm kiếm sản phẩm tại TAT Apple...">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
+            <script>
+                const searchInput = document.querySelector('.search'); // Lấy đúng thẻ <input>
+
+                searchInput.addEventListener('keypress', function(event) {
+                    // Kiểm tra xem phím nhấn có phải là Enter (keyCode 13)
+                    if (event.key === 'Enter') {
+                        // Lấy giá trị trong ô input
+                        const keyword = searchInput.value;
+                        if (keyword) {
+                            window.location.href = `/search?keyword=${encodeURIComponent(keyword)}`;
+                        }
+                    }
+                });
+            </script>
             <div class="icon-user">
                 <a style="color: black">
                     <i class="fa-solid fa-user"></i>
@@ -66,7 +80,7 @@
             </div>
         </div>
         <ul class="menu-tieu-de">
-            <% products.forEach(product => { %>
+            <% category.forEach(product => { %>
                 <li style="width: 200px">
                     <a href="<%= product.name === 'Âm Thanh' ? '/category/sound' 
                     : product.name === 'Phụ Kiện' ? '/category/accessory' 
@@ -77,7 +91,7 @@
                     
                 </li>
             <% }) %>
-            <li style="width: 200px"><a href="">
+            <li style="width: 200px"><a href="/infor-about-tatapple">
                 Tìm hiểu thêm
             </a></li>
         </ul>
